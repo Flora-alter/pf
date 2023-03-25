@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NH Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;400;700&family=Open+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body class="text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container just">
+            <h1 class="display-3">Portfolio</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="container navbar-nav its">
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#Education">Education</a>
+                    <a class="nav-link" href="#">Works</a>
+                    <a class="nav-link" href="#LinksAndContact">Links & Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container underline" id="About">
+        <h2 class="display-4 text-light">About</h2>
+        <div class="intro-container">
+            <div id="self" class="intro-position">
+                <img src="img/cups.png" class="self-intro-img" id="name-parent">
+                <div id="name">
+                    中村　秀行
+                </div>
+            </div>
+
+            <div class="self-intro">
+                <p>
+                    ロボットや強化学習に興味のある学生です。
+                    左の画像はだいぶ前にBlenderでレンダリングした画像です。
+                    最近は競プロやWeb系にも関心が向いてきています。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container underline">
+        <h2 class="display-4 text-light">Education</h2>
+        <ul class="ul-text">
+            <li>京都大学工学部電気電子工学科（2019/4~2023/3）</li>
+            <li>京都大学工学部電気電子工学科　石井研究室（2022/4~2023/3）</li>
+            <li>京都大学大学院情報学研究科　システム科学専攻（2023/4~）</li>
+        </ul>
+    </div>
+
+    <div class="container underline">
+        <h2 class="display-4 text-light">Organization</h2>
+        <ul class="ul-text">
+            <li>京大機械研究会（2022/4~）</li>
+            <li><a href="https://camph.net" class="anchor">CAMPHOR-</a> 運営メンバー　（2022/11~）</li>
+        </ul>
+    </div>
+
+    <div class="container underline">
+        <h2 class="display-4">Works</h2>
+        <ul class="ul-text">
+            <li>屋上探査用クローラ</li>
+            <ul>
+                <li>
+                    CAMPHOR-の天井の状況を観察するためのクローラを作成しました
+                    <br>
+                    <img src="img/crawler.jpeg" alt="crawler" id="crawler">
+                </li>
+                <li>
+                    理由：拠点が古民家で天井が崩落してきたので
+                </li>
+                <li>
+                    M5MatirxとESP32搭載の無線カメラの載せており、Dabbleを通じて無線操作できる
+                </li>
+            </ul>
+            <li>ポートフォリオ＆サイト</li>
+            <ul>
+                <li>
+                    技育CAMP 2023 vol.1にて制作したものです
+                </li>
+            </ul>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2 class="display-4 text-light" id="LinksAndContact">Links & Contact</h2>
+        <ul class="ul-text">
+            <li>
+                <a href="https://twitter.com/rhrc4000" class="anchor">Twitter</a>
+            </li>
+            <li>
+                <a href="https://github.com/Flora-alter" class="anchor">Github</a>
+            </li>
+        </ul>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label text-light">Email address</label>
+            <input type="email" class="form-control" id="email-address" placeholder="xxx@yyy.com" required>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label text-light">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Subject">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label text-light">message</label>
+            <textarea class="form-control" id="message" rows="5"></textarea>
+        </div>
+        <input class="btn btn-light submission" type="submit" value="Submit" id="submit-txt">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="./script.js"></script>
+        <!-- <div class="mail-form">
+            <label for="mail-for-sub"></label>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script src="./script.js"></script>
+            <a href="mailto:sprt.pfweb@gmail.com" id="mail-form-sub">Submit</a>
+        </div> -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
