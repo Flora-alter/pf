@@ -98,16 +98,17 @@ h1 {
     height: 300px;
 }
 
-/* .mail-form {
-    display: block;
-    height: 2em;
-    width: 5em;
-    background-color: white;
-    border: 2px solid white;
-    border-radius: 10%;
-    text-align: center;
-    margin-bottom: 2em;
-} */
+#biped_robot {
+    width: 400px;
+    height: 800px;
+    object-fit: cover;
+}
+
+#biped_bs {
+    width: 600px;
+    height: 1000px;
+    object-fit: cover;
+}
 
 #mail-form-sub {
     font-weight: 2em;

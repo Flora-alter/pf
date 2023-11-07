@@ -49,7 +49,7 @@
                 <p>
                     ロボットや強化学習に興味のある学生です。
                     左の画像はだいぶ前にBlenderでレンダリングした画像です。
-                    最近は競プロやWeb系にも関心が向いてきています。
+                    最近は、人間の環境で生活できる人型ロボットを作るべくいろいろ試行錯誤しています。
                 </p>
             </div>
         </div>
@@ -78,21 +78,41 @@
             <li>屋上探査用クローラ</li>
             <ul>
                 <li>
-                    CAMPHOR-の天井の状況を観察するためのクローラを作成しました
+                    CAMPHOR-の天井の状況を観察するためのクローラを作成しました。
                     <br>
                     <img src="img/crawler.jpeg" alt="crawler" id="crawler">
                 </li>
                 <li>
-                    理由：拠点が古民家で天井が崩落してきたので
+                    理由：拠点が古民家で天井が崩落してきたので、屋上の様子を調べるため。また、動物が屋上を徘徊しているので、何がいるのかを調べるため。
                 </li>
                 <li>
-                    M5MatirxとESP32搭載の無線カメラの載せており、Dabbleを通じて無線操作できる
+                    M5MatirxとESP32搭載の無線カメラを載せており、Dabbleを通じて無線操作できます。
                 </li>
             </ul>
-            <li>ポートフォリオ＆サイト</li>
+            <li>このポートフォリオ</li>
             <ul>
                 <li>
-                    技育CAMP 2023 vol.1にて制作したものです
+                    技育CAMP 2023 vol.1にて制作したものです。
+                </li>
+            </ul>
+            <li>8自由度二脚ロボット</li>
+            <ul>
+                <li>
+                    2023/11/4・11/5で開催された鴨川ハッカソンに参加したときの制作物です。
+                    いずれ人間サイズの人型ロボットを作成して人間生活の支援ができたらよいと考え、
+                    手始めに脚だけの二脚ロボットを制作しました。
+                    主にハードウェアの設計の勉強と、ちゃんと完成させて動作させることを目的としています。
+                    射出成型を模倣して3Dプリント部品の強度を向上させる・
+                    積層方向を考慮しサポート材を節約するパーツ設計をするなどの工夫をしています。
+                    <br>
+                    <img src="img/biped_robot.JPG" alt="biped_robot" id="biped_robot">
+                </li>
+                <li>
+                    実際に屈伸して動いている様子です。
+                    順運動学により動作させています。
+                    あえて頑丈過ぎない作りにすることで、自身の運動による振動の影響を軽減させています。
+                    <br>
+                    <video controls src="video/biped_robot_bs.mp4" alt="biped_bs" id="biped_bs"></video>
                 </li>
             </ul>
         </ul>
@@ -108,27 +128,6 @@
                 <a href="https://github.com/Flora-alter" class="anchor">Github</a>
             </li>
         </ul>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label text-light">Email address</label>
-            <input type="email" class="form-control" id="email-address" placeholder="xxx@yyy.com" required>
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label text-light">Subject</label>
-            <input type="text" class="form-control" id="subject" placeholder="Subject">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label text-light">message</label>
-            <textarea class="form-control" id="message" rows="5"></textarea>
-        </div>
-        <input class="btn btn-light submission" type="submit" value="Submit" id="submit-txt">
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script src="./script.js"></script>
-        <!-- <div class="mail-form">
-            <label for="mail-for-sub"></label>
-            <script src="https://smtpjs.com/v3/smtp.js"></script>
-            <script src="./script.js"></script>
-            <a href="mailto:sprt.pfweb@gmail.com" id="mail-form-sub">Submit</a>
-        </div> -->
     </div>
 
 
